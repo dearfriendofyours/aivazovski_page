@@ -1,0 +1,73 @@
+.header {
+   padding: 25px 0 0 0;
+}
+
+
+.nav {
+
+}
+
+/* реализация полоски под навигационной панелью */
+.nav::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 32px 0 0 0;
+    background-color: var(--font-color-grey);
+}
+
+/* стилизация контейнера навигационного списка */
+.nav-list {
+    width: 100%;
+    display: flex;
+    /*  расположение элементов списка в строчку, начиная с края, с равными отступами*/
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.nav-link {
+    color: var(--font-color-grey);
+    font-size: 18px;
+    font-weight: 700;
+     /* Элемент позиционируется относительно своего нормального положения в потоке документа.
+
+    С помощью свойств top, right, bottom, left можно сдвинуть элемент относительно самого себя, при этом не влияя на положение окружающих элементов (они остаются на своих местах, как если бы этот элемент не был сдвинут).
+
+    Используется, когда нужно немного подкорректировать положение элемента, не ломая общий поток документа.*/
+    position: relative ;
+}
+
+.nav-link::after {
+    content: '';
+    /* Позиционируется относительно ближайшего предка, у которого значение позиции установлено как relative, absolute, fixed или sticky. Если такого предка нет, то относительно начального блока (обычно это viewport). */
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -10px;
+    height: 1px;
+    background-color: var(--font-color-grey);
+    /* анимация выезжающего подчёркивания */
+    transition: right .22s;
+
+
+}
+
+.nav-link:hover {
+    color: var(--color-main-black);
+}
+
+
+.nav-link:hover::after {
+    right: 0;
+
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        display: none;
+    }
+}

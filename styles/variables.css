@@ -1,3 +1,9 @@
+/* Общие переменные принято задавать в псевдоклассе рут */
 :root {
-    --bg--main: lightblue;
-}
+    --bg-main: lightblue;
+    --bg-main-grey: #F6F6F6;
+
+    --font-color-grey: #6a6868 ;
+
+    --color-main-black: #070707;
+} 
