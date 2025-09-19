@@ -5,6 +5,8 @@
 @import url('/styles/about.css');
 @import url('/styles/history.css');
 @import url('/styles/portfolio.css');
+@import url('/styles/contacts.css');
+@import url('/styles/mobile_nav.css');
 
 /* В общий файл стиля импортируются стили элементов, чтобы не засирать общий файл. Порядок имеет значение. Напирмер. переменные должны идти раньше того файла, где они будут использоваться (по сути, раньше всех, чтобы можно было использовать в любом) */
 

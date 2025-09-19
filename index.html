@@ -28,12 +28,50 @@
                         <a href="#portfolio-id" class="nav-link" aria-label="link to portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to contacts">Contacts</a>
+                        <a href="#contacts-id" class="nav-link" aria-label="link to contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <div class="mobile-navigation" aria-label="mobile navigation" class="mobile-navigation-toggler">
+        <label for="toggler-id" aria-label="open-close mobile navigation menu" >
+            <svg class="mobile-navigation-burger" aria-label="boorger icon">
+                <use href="/assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+        <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+
+        <nav class="mobile-navigation-menu" aria-label="mob header navigation">
+                <ul class="mobile-navigation-list" aria-label="mob header navigation list">
+                    <li>
+                        <a href="#home-id" class="mobile-navigation-link" aria-label="link to home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-id" class="mobile-navigation-link" aria-label="link to about">About</a>
+                    </li>
+                    <li>
+                        <a href="#history-id" class="mobile-navigation-link" aria-label="link to hisory">History</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio-id" class="mobile-navigation-link" aria-label="link to portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contacts-id" class="mobile-navigation-link" aria-label="link to contacts">Contacts</a>
+                    </li>
+                </ul>
+
+        <label for="toggler-id" aria-label="open-close mobile navigation menu" class="mobile-navigation-close">
+            <svg class="mobile-navigation-cross" aria-label="cross icon">
+                <use href="/assets/sprites.svg#cross-icon"></use>
+            </svg>
+
+        </label>
+
+            </nav>
+
+    </div>
 
     <main aria-label="main">
         <section class="home" aria-label="home section" id="home-id">
@@ -94,6 +132,39 @@
 
     </main>
 
-    <footer></footer>
+    <footer class="contacts" aria-label="contacts section" id="contacts-id">
+        <div class="container">
+            <h2 class="contacts-title">Contacts</h2>
+            <button class="contacts-button">
+                <a href="https://ayvazovskiy.su" class="button-link">ayvazovskiy.su</a>
+            </button>
+
+            <address class="socials" aria-label="socials icons">
+                <a href="https://youtube.com" target="_blank" aria-label="link to youtube">
+                    <svg class="social-icon" aria-label="youtube icon">
+                        <use href="/assets/sprites.svg#youtube-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="link to linkedin">
+                    <svg class="social-icon" aria-label="linkedin icon">
+                        <use href="/assets/sprites.svg#linkedin-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="link to instagram">
+                    <svg class="social-icon" aria-label="instagram icon">
+                        <use href="/assets/sprites.svg#instagram-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://facebook.com" target="_blank" aria-label="link to facebook">
+                    <svg class="social-icon" aria-label="facebook icon">
+                        <use href="/assets/sprites.svg#facebook-icon"></use>
+                    </svg>
+                </a>
+            </address>
+            <p class="contacts-info" aria-label="">More works you can see in these social networks</p>
+
+        </div>
+
+    </footer>
 </body>
 </html>
