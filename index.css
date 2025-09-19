@@ -1,7 +1,10 @@
 @import url('/styles/variables.css');
 @import url('/styles/basic.css');
 @import url('/styles/header.css');
-@import url('/styles/home.css')
+@import url('/styles/home.css');
+@import url('/styles/about.css');
+@import url('/styles/history.css');
+@import url('/styles/portfolio.css');
 
-/* В общий файл стиля импортируются стили элементов, чтобы не засирать общий файл */
+/* В общий файл стиля импортируются стили элементов, чтобы не засирать общий файл. Порядок имеет значение. Напирмер. переменные должны идти раньше того файла, где они будут использоваться (по сути, раньше всех, чтобы можно было использовать в любом) */
 
